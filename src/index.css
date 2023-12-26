@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Sarabun', sans-serif;
+}
+
+.ant-btn-primary {
+  background-color: #1677ff;
+}
+
+.banner-container-right p{
+  font-family: 'Roboto', sans-serif;
+}
+
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+
+.services-container-box{
+  @apply flex flex-col items-center justify-center text-white text-3xl p-4 gap-3 rounded-lg h-[300px];
+  background: linear-gradient(180deg, rgba(16, 29, 51, 0.9) 0%, rgba(12, 22, 38, 0.9) 68.75%);
+}
+
+.services-container-box img{
+  width: 20%;
+}
+
+.bg-color{
+  @apply bg-gray-900
+}
+
+.footer-hover{
+  @apply hover:scale-110 transition
+}
+
+.body-bg-color{
+  @apply bg-gray-400
+}
